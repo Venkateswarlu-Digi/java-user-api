@@ -9,8 +9,6 @@ import com.gmmco.user.model.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer> {
-
-    Optional<User> findById(Integer id);
-
+    Optional<User> findByEmpId(String empId);
     Optional<User> findByEmail(String email);
 }

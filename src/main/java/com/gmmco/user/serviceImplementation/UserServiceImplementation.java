@@ -14,10 +14,10 @@ public class UserServiceImplementation implements UserService {
     private UserRepository userRepository;
 
     @Override
-    public User getUser(Integer id, String email) {
+    public User getUser(String empId, String email) {
 
-        if (id != null) {
-            return userRepository.findById(id)
+        if (empId != null) {
+            return userRepository.findByEmpId(empId)
                     .orElseThrow(() -> new RuntimeException("User not found"));
         }
 
