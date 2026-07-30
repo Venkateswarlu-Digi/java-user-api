@@ -10,16 +10,16 @@ import lombok.Data;
 public class User {
 
     @Id
-    private Integer id;
+	public Integer id;
 
     @Column(name = "emp_id")
-    private String empId;
+    public String empId;
 
     @Column(name = "name")
-    private String name;
+    public String name;
 
     @Column(name = "email")
-    private String email;
+    public String email;
 
 
 }
